@@ -1,0 +1,20 @@
+{"type":"server-started","port":50648,"host":"127.0.0.1","url_host":"localhost","url":"http://localhost:50648","screen_dir":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content","state_dir":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/state"}
+{"type":"screen-added","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/approaches.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/approaches.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/approaches.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/approaches.html"}
+{"source":"user-event","type":"click","text":"A\n    \n      方案 A：同步网关 + RocketMQ 异步投递（推荐）\n      流程：业务系统 → HTTP POST → 网关服务（写入 RocketMQ）→ Worker 消费 → 调用外部 API\n      核心思路：网关只负责接收和入队，Worker 负责投递和重试。两层职责清晰分离，网关响应极快（<10ms），Worker 失败自动触发 RocketMQ 内置重试 + DLQ。\n      \n        优点\n          接收与投递完全解耦\n          RocketMQ 原生延迟重试（1s/5s/30s/...）\n          DLQ 兜底，不丢消息\n          业务系统无需等待外部 API 响应\n        \n        缺点\n          需要运维 RocketMQ\n          链路更长，排查需要跨服务","choice":"a","id":null,"timestamp":1777176795077}
+{"source":"user-event","type":"click","text":"A\n    \n      方案 A：同步网关 + RocketMQ 异步投递（推荐）\n      流程：业务系统 → HTTP POST → 网关服务（写入 RocketMQ）→ Worker 消费 → 调用外部 API\n      核心思路：网关只负责接收和入队，Worker 负责投递和重试。两层职责清晰分离，网关响应极快（<10ms），Worker 失败自动触发 RocketMQ 内置重试 + DLQ。\n      \n        优点\n          接收与投递完全解耦\n          RocketMQ 原生延迟重试（1s/5s/30s/...）\n          DLQ 兜底，不丢消息\n          业务系统无需等待外部 API 响应\n        \n        缺点\n          需要运维 RocketMQ\n          链路更长，排查需要跨服务","choice":"a","id":null,"timestamp":1777176796184}
+{"type":"screen-added","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/architecture.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/architecture.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/architecture.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/architecture.html"}
+{"type":"screen-added","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/data-model.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/data-model.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/data-model.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/data-model.html"}
+{"type":"screen-added","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/decisions.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/decisions.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/decisions.html"}
+{"type":"screen-updated","file":"/Users/sidoinechen/Documents/CK/.superpowers/brainstorm/37840-1777176723/content/decisions.html"}
+{"type":"server-stopped","reason":"idle timeout"}
