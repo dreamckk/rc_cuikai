@@ -9,14 +9,8 @@
 3. 需关注消息投递的可靠性和可回溯性，应具备重复投递和日志记录功能。
 
 ## 架构概览
-![](/Users/sidoinechen/Desktop/截屏2026-04-26 下午10.25.36.png)
-```
-业务系统 ──POST /notify──▶ Gateway API ──publish──▶ RocketMQ ──consume──▶ Dispatcher Worker ──HTTP──▶ 外部供应商 API
-                                                                                  │
-                                                                         失败不 ACK → 自动重试（16次）
-                                                                                  │
-                                                                           超限 → DLQ → 告警
-```
+https://github.com/dreamckk/rc_cuikai/blob/main/img/arch.png
+
 ## 设计文档
 见 [docs/superpowers/specs/2026-04-26-api-notification-system-design.md](docs/superpowers/specs/2026-04-26-api-notification-system-design.md)
 
